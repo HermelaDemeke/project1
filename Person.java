@@ -53,7 +53,6 @@ class Person implements Nameable {
     {
             return of_age()||parent_permission;
     }
-
     public String getCorrectName() {
         return name;
     }

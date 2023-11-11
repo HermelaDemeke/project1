@@ -1,6 +1,5 @@
 /*
 Create class Teacher with the following:
-Inherits from Person.
  */
 public class Teacher extends Person{
  String specialization;
