@@ -6,11 +6,20 @@ class Person implements Nameable {
     int id;
     int age;
     boolean parent_permission =true;
+public class Person {
+   String name="unknown";
+     int id;
+   int age;
+    boolean parent_permission=true;
 
     /*Constructor with name, age, and parent_permission as parameter.
      name and parent_permission are optional and have default values of "Unknown" and true.
      */
+
     public Person(String name, int age, boolean parent_permission ) {
+
+    public Person(String name, int age, boolean parent_permission) {
+
         this.name = name;
         this.age = age;
         this.parent_permission = parent_permission;
