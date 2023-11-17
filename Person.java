@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.List;
 /*Create class Person with the following:
 Instance vars: id, name, and age.*/
 class Person implements Nameable {
@@ -6,7 +7,7 @@ class Person implements Nameable {
     int id;
     int age;
     boolean parent_permission =true;
-
+    private List<Rental> rentals;
     /*Constructor with name, age, and parent_permission as parameter.
      name and parent_permission are optional and have default values of "Unknown" and true.
      */
@@ -14,6 +15,7 @@ class Person implements Nameable {
         this.name = name;
         this.age = age;
         this.parent_permission = parent_permission;
+        this.rentals = new ArrayList<>();
     }
 
 
@@ -29,6 +31,13 @@ class Person implements Nameable {
     public int getAge() {
         return age;
     }
+    public List<Rental> getRentals() {
+        return rentals;
+    }
+    public void addRental(Rental rental) {
+        rentals.add(rental);
+    }
+
 
 
 //Setters for name and age.
