@@ -19,7 +19,7 @@ class Person implements Nameable {
     }
 
 
-    // Getters for id, name, and age.
+    // Getters for id, name, and age and rentals.
     public String getName() {
         return name;
     }

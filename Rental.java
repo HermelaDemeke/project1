@@ -1,5 +1,3 @@
-import java.util.Date;
-
 /*
 Create a class Rental with the following:
 The date instance variable, should be initialized in the constructor.

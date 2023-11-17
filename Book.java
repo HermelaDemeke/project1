@@ -9,7 +9,7 @@ class Book {
          this.author = author;
          this.rentals = new ArrayList<>();
      }
-
+// getter and setter
      public String getTitle() {
          return title;
      }
