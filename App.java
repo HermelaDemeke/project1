@@ -2,12 +2,21 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+/*
+ app.java file that will serve as a console app entry point. It have methods that do the following:
+List all books.
+List all people.
+Create a person (teacher or student, not a plain Person).
+Create a book.
+Create a rental.
+List all rentals for a given person id.
+ */
 public   class App {
     private static List<Book> books = new ArrayList<>();
     private static final List<Person> people = new ArrayList<>();
     private static final List<Rental> rentals = new ArrayList<>();
     public static void listAllBooks() {
-        System.out.println("List of books:");
+        System.out.println("List of  books:");
         for (Book book : books) {
             System.out.println(book.getTitle() + " by " + book.getAuthor());
         }
