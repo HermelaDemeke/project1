@@ -16,7 +16,13 @@ class Person implements Nameable {
         this.name = name;
         this.age = age;
         this.parent_permission = parent_permission;
+        this.id=(int) (Math.random() * 10000000);
         this.rentals = new ArrayList<>();
+    }
+
+    public Person() {
+
+
     }
 
 
